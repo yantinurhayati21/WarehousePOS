@@ -1,0 +1,1164 @@
+{
+  "info": {
+    "name": "WarehousePOS API",
+    "description": "API Collection for Warehouse & POS System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:7001/api",
+      "type": "string"
+    },
+    {
+      "key": "externalAuthUrl",
+      "value": "https://api-wms.wit.co.id",
+      "type": "string"
+    },
+    {
+      "key": "token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "appToken",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "1. Generate Token (External API Direct)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.token) {",
+                  "    pm.collectionVariables.set('appToken', jsonData.token);",
+                  "    pm.collectionVariables.set('token', jsonData.token);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"app_name\": \"wms\",\n  \"app_key\": \"wms-app-key\",\n  \"device_id\": \"postman\",\n  \"device_type\": \"00031310\",\n  \"fcm_token\": \"\",\n  \"ip_address\": \"0.0.0.0\"\n}"
+            },
+            "url": {
+              "raw": "{{externalAuthUrl}}/GenerateToken",
+              "host": ["{{externalAuthUrl}}"],
+              "path": ["GenerateToken"]
+            }
+          }
+        },
+        {
+          "name": "2. Login (External API Direct)",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "token",
+                "value": "{{appToken}}",
+                "description": "Token from GenerateToken step"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"identifier\": \"test@wit.id\",\n  \"password\": \"123456\"\n}"
+            },
+            "url": {
+              "raw": "{{externalAuthUrl}}/Login",
+              "host": ["{{externalAuthUrl}}"],
+              "path": ["Login"]
+            }
+          }
+        },
+        {
+          "name": "Generate Token (via Local API)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.token) {",
+                  "    pm.collectionVariables.set('appToken', jsonData.token);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"appName\": \"wms\",\n  \"appKey\": \"wms-app-key\",\n  \"deviceId\": \"postman\",\n  \"deviceType\": \"00031310\",\n  \"fcmToken\": \"\",\n  \"ipAddress\": \"0.0.0.0\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Auth/generate-token",
+              "host": ["{{baseUrl}}"],
+              "path": ["Auth", "generate-token"]
+            }
+          }
+        },
+        {
+          "name": "Login (via Local API)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.appToken) {",
+                  "    pm.collectionVariables.set('appToken', jsonData.appToken);",
+                  "}",
+                  "if (jsonData.userToken) {",
+                  "    pm.collectionVariables.set('token', jsonData.userToken);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"identifier\": \"test@wit.id\",\n  \"password\": \"123456\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["Auth", "login"]
+            }
+          }
+        },
+        {
+          "name": "Full Auth (Generate + Login)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.appToken) {",
+                  "    pm.collectionVariables.set('appToken', jsonData.appToken);",
+                  "}",
+                  "if (jsonData.userToken) {",
+                  "    pm.collectionVariables.set('token', jsonData.userToken);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"identifier\": \"test@wit.id\",\n  \"password\": \"123456\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Auth/full-auth",
+              "host": ["{{baseUrl}}"],
+              "path": ["Auth", "full-auth"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Outlets",
+      "item": [
+        {
+          "name": "Get All Outlets",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Outlets?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Outlets"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" },
+                { "key": "search", "value": "", "disabled": true },
+                { "key": "isActive", "value": "true", "disabled": true }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Outlet by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Outlets/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Outlets", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Outlet",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"outletCode\": \"OUT001\",\n  \"outletName\": \"Main Warehouse\",\n  \"outletType\": \"Warehouse\",\n  \"address\": \"Jl. Industri No. 1\",\n  \"phone\": \"021-1234567\",\n  \"email\": \"warehouse@example.com\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Outlets",
+              "host": ["{{baseUrl}}"],
+              "path": ["Outlets"]
+            }
+          }
+        },
+        {
+          "name": "Update Outlet",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"outletName\": \"Main Warehouse Updated\",\n  \"address\": \"Jl. Industri No. 2\",\n  \"isActive\": true\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Outlets/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Outlets", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Outlet",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/Outlets/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Outlets", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Customer Tiers",
+      "item": [
+        {
+          "name": "Get All Customer Tiers",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/CustomerTiers",
+              "host": ["{{baseUrl}}"],
+              "path": ["CustomerTiers"]
+            }
+          }
+        },
+        {
+          "name": "Get Customer Tier by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/CustomerTiers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["CustomerTiers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Customer Tier",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tierName\": \"Gold\",\n  \"tierDescription\": \"Gold member with 10% discount\",\n  \"minPoints\": 1000,\n  \"discountPercentage\": 10.00\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/CustomerTiers",
+              "host": ["{{baseUrl}}"],
+              "path": ["CustomerTiers"]
+            }
+          }
+        },
+        {
+          "name": "Update Customer Tier",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tierName\": \"Platinum\",\n  \"discountPercentage\": 15.00\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/CustomerTiers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["CustomerTiers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Customer Tier",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/CustomerTiers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["CustomerTiers", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Customers",
+      "item": [
+        {
+          "name": "Get All Customers",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Customers?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Customers"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Customer by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Customers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Customers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Customer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerCode\": \"CUST001\",\n  \"customerName\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"08123456789\",\n  \"address\": \"Jl. Customer No. 1\",\n  \"tierId\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Customers",
+              "host": ["{{baseUrl}}"],
+              "path": ["Customers"]
+            }
+          }
+        },
+        {
+          "name": "Update Customer",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"customerName\": \"John Doe Updated\",\n  \"phone\": \"08198765432\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Customers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Customers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Customer",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/Customers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Customers", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Suppliers",
+      "item": [
+        {
+          "name": "Get All Suppliers",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Suppliers?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Suppliers"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Supplier by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Suppliers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Suppliers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Supplier",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"supplierCode\": \"SUP001\",\n  \"supplierName\": \"PT Supplier Utama\",\n  \"email\": \"supplier@example.com\",\n  \"phone\": \"021-7654321\",\n  \"address\": \"Jl. Supplier No. 1\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Suppliers",
+              "host": ["{{baseUrl}}"],
+              "path": ["Suppliers"]
+            }
+          }
+        },
+        {
+          "name": "Update Supplier",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"supplierName\": \"PT Supplier Utama Updated\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Suppliers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Suppliers", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Supplier",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/Suppliers/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Suppliers", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product Types",
+      "item": [
+        {
+          "name": "Get All Product Types",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ProductTypes",
+              "host": ["{{baseUrl}}"],
+              "path": ["ProductTypes"]
+            }
+          }
+        },
+        {
+          "name": "Create Product Type",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"typeName\": \"Electronics\",\n  \"typeDescription\": \"Electronic products\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ProductTypes",
+              "host": ["{{baseUrl}}"],
+              "path": ["ProductTypes"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Get All Products",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Products?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Products"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Product by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Products/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Products", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Product",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productCode\": \"PRD001\",\n  \"productName\": \"Laptop ASUS\",\n  \"productDescription\": \"ASUS Gaming Laptop\",\n  \"typeId\": 1,\n  \"baseUnit\": \"Pcs\",\n  \"conversionFactor\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Products",
+              "host": ["{{baseUrl}}"],
+              "path": ["Products"]
+            }
+          }
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productName\": \"Laptop ASUS ROG\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Products/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Products", "1"]
+            }
+          }
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "{{baseUrl}}/Products/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Products", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Product Variants",
+      "item": [
+        {
+          "name": "Get All Product Variants",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/ProductVariants?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["ProductVariants"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Product Variant",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productId\": 1,\n  \"variantName\": \"Black 16GB\",\n  \"variantCode\": \"PRD001-BLK-16\",\n  \"barcode\": \"1234567890123\",\n  \"weight\": 2.5\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/ProductVariants",
+              "host": ["{{baseUrl}}"],
+              "path": ["ProductVariants"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stocks",
+      "item": [
+        {
+          "name": "Get All Stocks",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Stocks?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Stocks"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Stock",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productId\": 1,\n  \"variantId\": 1,\n  \"outletId\": 1,\n  \"quantity\": 100,\n  \"minStock\": 10,\n  \"maxStock\": 500\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Stocks",
+              "host": ["{{baseUrl}}"],
+              "path": ["Stocks"]
+            }
+          }
+        },
+        {
+          "name": "Adjust Stock",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"productId\": 1,\n  \"variantId\": 1,\n  \"outletId\": 1,\n  \"quantityChange\": -5,\n  \"notes\": \"Damaged goods\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Stocks/adjust",
+              "host": ["{{baseUrl}}"],
+              "path": ["Stocks", "adjust"]
+            }
+          }
+        },
+        {
+          "name": "Get Stock Logs",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Stocks/logs?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Stocks", "logs"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Order Types",
+      "item": [
+        {
+          "name": "Get All Order Types",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/OrderTypes",
+              "host": ["{{baseUrl}}"],
+              "path": ["OrderTypes"]
+            }
+          }
+        },
+        {
+          "name": "Create Order Type",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"typeCode\": \"POS\",\n  \"typeName\": \"Point of Sale\",\n  \"description\": \"Direct sales\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/OrderTypes",
+              "host": ["{{baseUrl}}"],
+              "path": ["OrderTypes"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Payment Methods",
+      "item": [
+        {
+          "name": "Get All Payment Methods",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/PaymentMethods",
+              "host": ["{{baseUrl}}"],
+              "path": ["PaymentMethods"]
+            }
+          }
+        },
+        {
+          "name": "Create Payment Method",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"methodCode\": \"CASH\",\n  \"methodName\": \"Cash\",\n  \"description\": \"Cash payment\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/PaymentMethods",
+              "host": ["{{baseUrl}}"],
+              "path": ["PaymentMethods"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orders",
+      "item": [
+        {
+          "name": "Get All Orders",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Orders?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Orders"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Order by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Orders/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Orders", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderTypeId\": 1,\n  \"outletId\": 1,\n  \"customerId\": 1,\n  \"discountAmount\": 0,\n  \"taxAmount\": 0,\n  \"shippingAmount\": 0,\n  \"notes\": \"Test order\",\n  \"items\": [\n    {\n      \"productId\": 1,\n      \"variantId\": 1,\n      \"quantity\": 2,\n      \"unitPrice\": 15000000,\n      \"discountPercentage\": 0\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Orders",
+              "host": ["{{baseUrl}}"],
+              "path": ["Orders"]
+            }
+          }
+        },
+        {
+          "name": "Update Order Status",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderStatus\": \"Confirmed\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Orders/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Orders", "1"]
+            }
+          }
+        },
+        {
+          "name": "Cancel Order",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/Orders/1/cancel",
+              "host": ["{{baseUrl}}"],
+              "path": ["Orders", "1", "cancel"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Purchases",
+      "item": [
+        {
+          "name": "Get All Purchases",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Purchases?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["Purchases"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Purchase by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/Purchases/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Purchases", "1"]
+            }
+          }
+        },
+        {
+          "name": "Create Purchase",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"supplierId\": 1,\n  \"outletId\": 1,\n  \"notes\": \"Purchase order\",\n  \"items\": [\n    {\n      \"productId\": 1,\n      \"variantId\": 1,\n      \"quantity\": 50,\n      \"unitCost\": 12000000\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Purchases",
+              "host": ["{{baseUrl}}"],
+              "path": ["Purchases"]
+            }
+          }
+        },
+        {
+          "name": "Update Purchase Status",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"purchaseStatus\": \"Ordered\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/Purchases/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["Purchases", "1"]
+            }
+          }
+        },
+        {
+          "name": "Receive Purchase",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/Purchases/1/receive",
+              "host": ["{{baseUrl}}"],
+              "path": ["Purchases", "1", "receive"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Stock Opnames",
+      "item": [
+        {
+          "name": "Get All Stock Opnames",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/StockOpnames?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["StockOpnames"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Stock Opname",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"outletId\": 1,\n  \"notes\": \"Monthly stock count\",\n  \"items\": [\n    {\n      \"productId\": 1,\n      \"variantId\": 1,\n      \"systemQuantity\": 100,\n      \"physicalQuantity\": 98,\n      \"notes\": \"2 units missing\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/StockOpnames",
+              "host": ["{{baseUrl}}"],
+              "path": ["StockOpnames"]
+            }
+          }
+        },
+        {
+          "name": "Complete Stock Opname",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/StockOpnames/1/complete",
+              "host": ["{{baseUrl}}"],
+              "path": ["StockOpnames", "1", "complete"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Order Returns",
+      "item": [
+        {
+          "name": "Get All Order Returns",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/OrderReturns?page=1&pageSize=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["OrderReturns"],
+              "query": [
+                { "key": "page", "value": "1" },
+                { "key": "pageSize", "value": "10" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Order Return",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"orderId\": 1,\n  \"returnReason\": \"Defective product\",\n  \"items\": [\n    {\n      \"orderDetailId\": 1,\n      \"productId\": 1,\n      \"variantId\": 1,\n      \"returnQuantity\": 1,\n      \"unitPrice\": 15000000,\n      \"reason\": \"Screen defect\"\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/OrderReturns",
+              "host": ["{{baseUrl}}"],
+              "path": ["OrderReturns"]
+            }
+          }
+        },
+        {
+          "name": "Approve Order Return",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/OrderReturns/1/approve",
+              "host": ["{{baseUrl}}"],
+              "path": ["OrderReturns", "1", "approve"]
+            }
+          }
+        },
+        {
+          "name": "Complete Order Return",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "{{baseUrl}}/OrderReturns/1/complete",
+              "host": ["{{baseUrl}}"],
+              "path": ["OrderReturns", "1", "complete"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

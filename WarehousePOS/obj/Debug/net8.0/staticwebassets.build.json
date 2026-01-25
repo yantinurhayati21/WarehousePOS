@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "wVfORwexpB9i7kn+jwbtY+5BR9PgrSVSJ0/7kUk5l+Y=",
+  "Source": "WarehousePOS",
+  "BasePath": "_content/WarehousePOS",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
