@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WarehousePOS.Data;
 using WarehousePOS.DTOs;
+using WarehousePOS.Exceptions;
 using WarehousePOS.Models;
 
 namespace WarehousePOS.Controllers
@@ -17,66 +18,6 @@ namespace WarehousePOS.Controllers
         public CustomersController(AppDbContext context)
         {
             _context = context;
-        }
-
-        [HttpGet]
-        public async Task<ActionResult<PaginatedResponse<CustomerResponseDto>>> GetAll(
-            [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 10,
-            [FromQuery] string? search = null,
-            [FromQuery] int? tierId = null,
-            [FromQuery] bool? isActive = null)
-        {
-            var query = _context.Customers
-                .Include(x => x.Tier)
-                .Where(x => x.DeletedAt == null)
-                .AsQueryable();
-
-            if (!string.IsNullOrEmpty(search))
-            {
-                query = query.Where(x => x.CustomerName.Contains(search) || x.CustomerCode.Contains(search));
-            }
-
-            if (tierId.HasValue)
-            {
-                query = query.Where(x => x.TierId == tierId.Value);
-            }
-
-            if (isActive.HasValue)
-            {
-                query = query.Where(x => x.IsActive == isActive.Value);
-            }
-
-            var totalCount = await query.CountAsync();
-            var items = await query
-                .OrderBy(x => x.CustomerName)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .Select(x => new CustomerResponseDto
-                {
-                    CustomerId = x.CustomerId,
-                    CustomerCode = x.CustomerCode,
-                    CustomerName = x.CustomerName,
-                    Email = x.Email,
-                    Phone = x.Phone,
-                    Address = x.Address,
-                    TierId = x.TierId,
-                    TierName = x.Tier != null ? x.Tier.TierName : null,
-                    TotalPoints = x.TotalPoints,
-                    TotalPurchase = x.TotalPurchase,
-                    IsActive = x.IsActive,
-                    CreatedAt = x.CreatedAt
-                })
-                .ToListAsync();
-
-            return Ok(new PaginatedResponse<CustomerResponseDto>
-            {
-                Success = true,
-                Data = items,
-                TotalCount = totalCount,
-                Page = page,
-                PageSize = pageSize
-            });
         }
 
         [HttpGet("{id}")]
@@ -102,20 +43,16 @@ namespace WarehousePOS.Controllers
                 })
                 .FirstOrDefaultAsync();
 
+
             if (customer == null)
-            {
-                return NotFound(new ApiResponse<CustomerResponseDto>
-                {
-                    Success = false,
-                    Message = "Customer not found"
-                });
-            }
+                throw new NotFoundException("Customer not found");
 
             return Ok(new ApiResponse<CustomerResponseDto>
             {
                 Success = true,
                 Data = customer
             });
+
         }
 
         [HttpPost]

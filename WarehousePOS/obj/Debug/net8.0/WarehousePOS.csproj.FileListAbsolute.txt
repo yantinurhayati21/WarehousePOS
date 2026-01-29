@@ -135,3 +135,4 @@ C:\Users\Yanti\source\repos\WarehousePOS\WarehousePOS\obj\Debug\net8.0\refint\Wa
 C:\Users\Yanti\source\repos\WarehousePOS\WarehousePOS\obj\Debug\net8.0\WarehousePOS.pdb
 C:\Users\Yanti\source\repos\WarehousePOS\WarehousePOS\obj\Debug\net8.0\WarehousePOS.genruntimeconfig.cache
 C:\Users\Yanti\source\repos\WarehousePOS\WarehousePOS\obj\Debug\net8.0\ref\WarehousePOS.dll
+C:\Users\Yanti\source\repos\WarehousePOS\WarehousePOS\obj\Debug\net8.0\WarehousePOS.sourcelink.json

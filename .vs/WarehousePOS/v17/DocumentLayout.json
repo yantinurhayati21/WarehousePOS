@@ -3,92 +3,176 @@
   "WorkspaceRootPath": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\outletscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\outletscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\middlewares\\exceptionmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\services\\externaltokenauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\services\\externaltokenauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\outletdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\outletdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\authdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\services\\externaltokenauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\services\\externaltokenauthhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\supplierdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\supplierdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\stockopnamedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\stockopnamedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\stockdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\stockdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\returndtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\returndtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\purchasedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\purchasedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\pricetier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\pricetier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\productprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\productprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\returndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\returndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\sodetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\sodetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\stocklocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\stocklocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\stocklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\stocklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\stockopname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\stockopname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\productdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\orderdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\customerdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\supplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\stockopname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\stockopname.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\stocklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\stocklog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\stocklocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\stocklocation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\sodetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\sodetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\returndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\returndetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\purchasedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\productvariant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\producttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\productstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\productstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\productprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\productprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\pricetier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\pricetier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\outlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\outlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\ordertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\ordertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\orderreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\orderreturn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\orderpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\orderpayment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\customertier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,28 +183,24 @@
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\outlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\outlet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\dtos\\outletdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\dtos\\outletdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\customertierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\customertierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\productvariantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\productvariantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\customertierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\customertierscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\controllers\\productvariantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|solutionrelative:warehousepos\\controllers\\productvariantscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{982A0AFF-8EAD-43A9-BBA5-4B56A861693B}|WarehousePOS\\WarehousePOS.csproj|c:\\users\\yanti\\source\\repos\\warehousepos\\warehousepos\\warehousepos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -134,7 +214,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 217,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,176 +222,295 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "WarehousePOS\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:40:43.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "WarehousePOS\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:40:02.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ExceptionMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Middlewares\\ExceptionMiddleware.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Middlewares\\ExceptionMiddleware.cs",
+              "RelativeToolTip": "WarehousePOS\\Middlewares\\ExceptionMiddleware.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:37:20.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomersController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\CustomersController.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\CustomersController.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\CustomersController.cs",
+              "RelativeToolTip": "WarehousePOS\\Controllers\\CustomersController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAwC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:27:40.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "WarehousePOS\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAswFEAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T01:45:26.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "WarehousePOS\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA/wMAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-22T22:41:09.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OutletsController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\OutletsController.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\OutletsController.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\OutletsController.cs",
+              "RelativeToolTip": "WarehousePOS\\Controllers\\OutletsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T13:47:42.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SupplierDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\SupplierDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\SupplierDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\SupplierDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\SupplierDTOs.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA+wAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:28:09.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\AuthDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\AuthDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\AuthDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\AuthDTOs.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:58:11.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ExternalTokenAuthHandler.cs",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Services\\ExternalTokenAuthHandler.cs",
               "RelativeDocumentMoniker": "WarehousePOS\\Services\\ExternalTokenAuthHandler.cs",
               "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Services\\ExternalTokenAuthHandler.cs",
               "RelativeToolTip": "WarehousePOS\\Services\\ExternalTokenAuthHandler.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-25T09:28:38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SupplierDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\SupplierDTOs.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\SupplierDTOs.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\SupplierDTOs.cs",
-              "RelativeToolTip": "WarehousePOS\\DTOs\\SupplierDTOs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:28:09.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\ProductDTOs.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\ProductDTOs.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\ProductDTOs.cs",
-              "RelativeToolTip": "WarehousePOS\\DTOs\\ProductDTOs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:28:05.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PurchaseDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\PurchaseDTOs.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\PurchaseDTOs.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\PurchaseDTOs.cs",
-              "RelativeToolTip": "WarehousePOS\\DTOs\\PurchaseDTOs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:28:04.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CustomerDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\CustomerDTOs.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\CustomerDTOs.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\CustomerDTOs.cs",
-              "RelativeToolTip": "WarehousePOS\\DTOs\\CustomerDTOs.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:58.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PaymentMethod.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PaymentMethod.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\PaymentMethod.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PaymentMethod.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\PaymentMethod.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:54.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PriceTier.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PriceTier.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\PriceTier.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PriceTier.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\PriceTier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:52.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Program.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Program.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Program.cs",
-              "RelativeToolTip": "WarehousePOS\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T23:30:50.162Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductPrice.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductPrice.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ProductPrice.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductPrice.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\ProductPrice.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:51.164Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 10,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "WarehousePOS\\Services\\AuthService.cs",
               "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Services\\AuthService.cs",
               "RelativeToolTip": "WarehousePOS\\Services\\AuthService.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAswCMAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAswKIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-23T00:52:21.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductVariant.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductVariant.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ProductVariant.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductVariant.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\ProductVariant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Program.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Program.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Program.cs",
+              "RelativeToolTip": "WarehousePOS\\Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAAEUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:47.716Z",
+              "WhenOpened": "2026-01-22T23:30:50.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PurchaseDetail.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PurchaseDetail.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\PurchaseDetail.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PurchaseDetail.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\PurchaseDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "OutletDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OutletDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\OutletDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OutletDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\OutletDTOs.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAkwF0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:46.402Z",
+              "WhenOpened": "2026-01-23T09:19:09.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ReturnDetail.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ReturnDetail.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ReturnDetail.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ReturnDetail.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\ReturnDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "OrderDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OrderDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\OrderDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OrderDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\OrderDTOs.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:44.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-24T14:13:05.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CustomerDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\CustomerDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\CustomerDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\CustomerDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\CustomerDTOs.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAzwAoAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:58.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ReturnDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\ReturnDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\ReturnDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\ReturnDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\ReturnDTOs.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T04:11:38.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StockDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\StockDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\StockDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\StockDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\StockDTOs.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAADwvyIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T04:12:33.652Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "StockOpnameDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\StockOpnameDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\StockOpnameDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\StockOpnameDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\StockOpnameDTOs.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T04:12:49.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StockOpname.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockOpname.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\StockOpname.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockOpname.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\StockOpname.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wA8AAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:16.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "StockLog.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLog.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\StockLog.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLog.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\StockLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:23.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "StockLocation.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLocation.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\StockLocation.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLocation.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\StockLocation.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:30.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProductDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\ProductDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\ProductDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\ProductDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\ProductDTOs.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAwwA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:28:05.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PurchaseDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\PurchaseDTOs.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\PurchaseDTOs.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\PurchaseDTOs.cs",
+              "RelativeToolTip": "WarehousePOS\\DTOs\\PurchaseDTOs.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAowCQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:28:04.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "SoDetail.cs",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\SoDetail.cs",
               "RelativeDocumentMoniker": "WarehousePOS\\Models\\SoDetail.cs",
@@ -319,51 +518,287 @@
               "RelativeToolTip": "WarehousePOS\\Models\\SoDetail.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:36.676Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T09:27:36.676Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StockLocation.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLocation.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\StockLocation.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLocation.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\StockLocation.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "ReturnDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ReturnDetail.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ReturnDetail.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ReturnDetail.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\ReturnDetail.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAA0wC4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:30.998Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T09:27:44.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StockLog.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLog.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\StockLog.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockLog.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\StockLog.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "PurchaseDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PurchaseDetail.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\PurchaseDetail.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PurchaseDetail.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\PurchaseDetail.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:23.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-25T09:27:46.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StockOpname.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockOpname.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\StockOpname.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\StockOpname.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\StockOpname.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 27,
+              "Title": "Purchase.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Purchase.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Purchase.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Purchase.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Purchase.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAywAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-25T09:27:16.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-29T03:53:40.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
+              "Title": "ProductVariant.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductVariant.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ProductVariant.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductVariant.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\ProductVariant.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowBsAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:47.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Supplier.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Supplier.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Supplier.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Supplier.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Supplier.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T12:07:51.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductType.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductType.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ProductType.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductType.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\ProductType.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:12:32.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductStock.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductStock.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ProductStock.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductStock.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\ProductStock.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:10:41.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductPrice.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductPrice.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\ProductPrice.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\ProductPrice.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\ProductPrice.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:51.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "PurchasesController.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\PurchasesController.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\PurchasesController.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\PurchasesController.cs",
+              "RelativeToolTip": "WarehousePOS\\Controllers\\PurchasesController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T03:51:55.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Outlet.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Outlet.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Outlet.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Outlet.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Outlet.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T09:42:22.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\OrderDetail.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderDetail.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\OrderDetail.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T01:47:17.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "OrderPayment.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderPayment.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\OrderPayment.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderPayment.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\OrderPayment.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBkAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T01:54:48.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "OrderReturn.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderReturn.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\OrderReturn.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderReturn.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\OrderReturn.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:01:10.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "OrderType.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderType.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\OrderType.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\OrderType.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\OrderType.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAkwAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:01:20.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Product.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Product.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T02:09:12.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Enums.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Enums.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Enums.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T01:46:59.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PaymentMethod.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\PaymentMethod.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:54.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T12:06:01.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PriceTier.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PriceTier.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\PriceTier.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\PriceTier.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\PriceTier.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA7wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-25T09:27:52.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Customer.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Customer.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T10:21:23.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "CustomerTier.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\CustomerTier.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\CustomerTier.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\CustomerTier.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\CustomerTier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T14:05:34.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Order.cs",
+              "RelativeToolTip": "WarehousePOS\\Models\\Order.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-24T14:12:40.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\appsettings.json",
+              "RelativeDocumentMoniker": "WarehousePOS\\appsettings.json",
+              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\appsettings.json",
+              "RelativeToolTip": "WarehousePOS\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-22T23:19:21.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\OrdersController.cs",
@@ -371,109 +806,11 @@
               "RelativeToolTip": "WarehousePOS\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T14:13:26.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-24T14:13:26.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "OrderDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OrderDTOs.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\OrderDTOs.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OrderDTOs.cs",
-              "RelativeToolTip": "WarehousePOS\\DTOs\\OrderDTOs.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAA9wIIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T14:13:05.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Order.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Order.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Order.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\Order.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAwwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T14:12:40.62Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\CustomersController.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "WarehousePOS\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T14:06:20.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CustomerTier.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\CustomerTier.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\CustomerTier.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\CustomerTier.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\CustomerTier.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAADwvyIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T14:05:34.349Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Customer.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\Customer.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T10:21:23.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Supplier.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Supplier.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Supplier.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Supplier.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\Supplier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T12:07:51.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "OutletDTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OutletDTOs.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\DTOs\\OutletDTOs.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\DTOs\\OutletDTOs.cs",
-              "RelativeToolTip": "WarehousePOS\\DTOs\\OutletDTOs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T09:19:09.266Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Outlet.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Outlet.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Models\\Outlet.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Models\\Outlet.cs",
-              "RelativeToolTip": "WarehousePOS\\Models\\Outlet.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-24T09:42:22.786Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 48,
               "Title": "CustomerTiersController.cs",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\CustomerTiersController.cs",
               "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\CustomerTiersController.cs",
@@ -485,7 +822,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 49,
               "Title": "ProductVariantsController.cs",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Controllers\\ProductVariantsController.cs",
               "RelativeDocumentMoniker": "WarehousePOS\\Controllers\\ProductVariantsController.cs",
@@ -497,31 +834,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\appsettings.json",
-              "RelativeDocumentMoniker": "WarehousePOS\\appsettings.json",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\appsettings.json",
-              "RelativeToolTip": "WarehousePOS\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-22T23:19:21.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "WarehousePOS\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "WarehousePOS\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-22T22:41:09.926Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 50,
               "Title": "WarehousePOS.csproj",
               "DocumentMoniker": "C:\\Users\\Yanti\\source\\repos\\WarehousePOS\\WarehousePOS\\WarehousePOS.csproj",
               "RelativeDocumentMoniker": "WarehousePOS\\WarehousePOS.csproj",

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WarehousePOS.Data;
 using WarehousePOS.DTOs;
+using WarehousePOS.Exceptions;
 using WarehousePOS.Models;
 
 namespace WarehousePOS.Controllers
@@ -21,28 +22,75 @@ namespace WarehousePOS.Controllers
 
         [HttpGet]
         public async Task<ActionResult<PaginatedResponse<OutletResponseDto>>> GetAll(
-            [FromQuery] int page = 1,
-            [FromQuery] int pageSize = 10,
-            [FromQuery] string? search = null,
-            [FromQuery] bool? isActive = null)
+    [FromQuery] OutletQueryDto dto)
         {
-            var query = _context.Outlets.Where(x => x.DeletedAt == null).AsQueryable();
+            var query = _context.Outlets
+                .Where(x => x.DeletedAt == null)
+                .AsQueryable();
 
-            if (!string.IsNullOrEmpty(search))
+            // =========================
+            // SEARCH
+            // =========================
+            if (!string.IsNullOrWhiteSpace(dto.Search))
             {
-                query = query.Where(x => x.OutletName.Contains(search) || x.OutletCode.Contains(search));
+                query = query.Where(x =>
+                    x.OutletName.Contains(dto.Search) ||
+                    x.OutletCode.Contains(dto.Search));
             }
 
-            if (isActive.HasValue)
+            // =========================
+            // IS ACTIVE
+            // =========================
+            if (dto.IsActive.HasValue)
             {
-                query = query.Where(x => x.IsActive == isActive.Value);
+                query = query.Where(x => x.IsActive == dto.IsActive.Value);
             }
+
+            // =========================
+            // OUTLET TYPE
+            // =========================
+            if (!string.IsNullOrEmpty(dto.OutletType) &&
+                Enum.TryParse<OutletType>(dto.OutletType, true, out var outletType))
+            {
+                query = query.Where(x => x.OutletType == outletType);
+            }
+
+            // =========================
+            // DATE RANGE
+            // =========================
+            if (dto.StartDate.HasValue)
+            {
+                query = query.Where(x => x.CreatedAt >= dto.StartDate.Value);
+            }
+
+            if (dto.EndDate.HasValue)
+            {
+                query = query.Where(x => x.CreatedAt <= dto.EndDate.Value);
+            }
+
+            // =========================
+            // SORTING
+            // =========================
+            query = dto.SortBy.ToLower() switch
+            {
+                "outletcode" => dto.SortDir == "desc"
+                    ? query.OrderByDescending(x => x.OutletCode)
+                    : query.OrderBy(x => x.OutletCode),
+
+                "createdat" => dto.SortDir == "desc"
+                    ? query.OrderByDescending(x => x.CreatedAt)
+                    : query.OrderBy(x => x.CreatedAt),
+
+                _ => dto.SortDir == "desc"
+                    ? query.OrderByDescending(x => x.OutletName)
+                    : query.OrderBy(x => x.OutletName)
+            };
 
             var totalCount = await query.CountAsync();
+
             var items = await query
-                .OrderBy(x => x.OutletName)
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
+                .Skip((dto.Page - 1) * dto.PageSize)
+                .Take(dto.PageSize)
                 .Select(x => new OutletResponseDto
                 {
                     OutletId = x.OutletId,
@@ -62,10 +110,11 @@ namespace WarehousePOS.Controllers
                 Success = true,
                 Data = items,
                 TotalCount = totalCount,
-                Page = page,
-                PageSize = pageSize
+                Page = dto.Page,
+                PageSize = dto.PageSize
             });
         }
+
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ApiResponse<OutletResponseDto>>> GetById(int id)
@@ -103,57 +152,81 @@ namespace WarehousePOS.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ApiResponse<OutletResponseDto>>> Create([FromBody] OutletCreateDto dto)
+        public async Task<ActionResult<ApiResponse<OutletResponseDto>>> Create(
+    [FromBody] OutletCreateDto dto)
         {
-            if (await _context.Outlets.AnyAsync(x => x.OutletCode == dto.OutletCode && x.DeletedAt == null))
-            {
-                return BadRequest(new ApiResponse<OutletResponseDto>
-                {
-                    Success = false,
-                    Message = "Outlet code already exists"
-                });
-            }
+            // 1?? Body null
+            if (dto == null)
+                throw new BadRequestException("Request body cannot be null");
 
+            // 2?? DataAnnotation validation
+            if (!ModelState.IsValid)
+                throw new BadRequestException(
+                    string.Join("; ",
+                        ModelState.Values
+                            .SelectMany(v => v.Errors)
+                            .Select(e => e.ErrorMessage)));
+
+            // 3?? Trim input
+            dto.OutletCode = dto.OutletCode.Trim();
+            dto.OutletName = dto.OutletName.Trim();
+            dto.OutletType = dto.OutletType.Trim();
+
+            // 4?? Empty string manual check
+            if (string.IsNullOrWhiteSpace(dto.OutletCode))
+                throw new BadRequestException("Outlet code is required");
+
+            if (string.IsNullOrWhiteSpace(dto.OutletName))
+                throw new BadRequestException("Outlet name is required");
+
+            // 5?? Validate OutletType enum
             if (!Enum.TryParse<OutletType>(dto.OutletType, true, out var outletType))
-            {
-                return BadRequest(new ApiResponse<OutletResponseDto>
-                {
-                    Success = false,
-                    Message = "Invalid outlet type. Valid values: Warehouse, Store, Branch"
-                });
-            }
+                throw new BadRequestException(
+                    "Invalid outlet type. Valid values: Warehouse, Store, Branch");
 
+            // 6?? Duplicate check (case-insensitive)
+            var isExist = await _context.Outlets.AnyAsync(x =>
+                x.DeletedAt == null &&
+                x.OutletCode.ToLower() == dto.OutletCode.ToLower());
+
+            if (isExist)
+                throw new BadRequestException("Outlet code already exists");
+
+            // 7?? Create entity
             var outlet = new Outlet
             {
                 OutletCode = dto.OutletCode,
                 OutletName = dto.OutletName,
                 OutletType = outletType,
-                Address = dto.Address,
-                Phone = dto.Phone,
-                Email = dto.Email,
+                Address = dto.Address?.Trim(),
+                Phone = dto.Phone?.Trim(),
+                Email = dto.Email?.Trim(),
                 CreatedBy = 1
             };
 
             _context.Outlets.Add(outlet);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(GetById), new { id = outlet.OutletId }, new ApiResponse<OutletResponseDto>
-            {
-                Success = true,
-                Message = "Outlet created successfully",
-                Data = new OutletResponseDto
+            // 8?? Response
+            return CreatedAtAction(nameof(GetById),
+                new { id = outlet.OutletId },
+                new ApiResponse<OutletResponseDto>
                 {
-                    OutletId = outlet.OutletId,
-                    OutletCode = outlet.OutletCode,
-                    OutletName = outlet.OutletName,
-                    OutletType = outlet.OutletType.ToString(),
-                    Address = outlet.Address,
-                    Phone = outlet.Phone,
-                    Email = outlet.Email,
-                    IsActive = outlet.IsActive,
-                    CreatedAt = outlet.CreatedAt
-                }
-            });
+                    Success = true,
+                    Message = "Outlet created successfully",
+                    Data = new OutletResponseDto
+                    {
+                        OutletId = outlet.OutletId,
+                        OutletCode = outlet.OutletCode,
+                        OutletName = outlet.OutletName,
+                        OutletType = outlet.OutletType.ToString(),
+                        Address = outlet.Address,
+                        Phone = outlet.Phone,
+                        Email = outlet.Email,
+                        IsActive = outlet.IsActive,
+                        CreatedAt = outlet.CreatedAt
+                    }
+                });
         }
 
         [HttpPut("{id}")]
