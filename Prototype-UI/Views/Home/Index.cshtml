@@ -1,0 +1,473 @@
+﻿@model IEnumerable<Prototype_UI.Models.Product>
+@{
+    ViewData["Title"] = "POS";
+    Layout = "~/Views/Shared/_PosLayout.cshtml";
+}
+
+<!-- Header -->
+<header class="bg-white px-6 py-3 flex justify-between items-center border-b border-gray-200 h-[60px]">
+    <div class="flex items-center gap-4">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white bg-gradient-to-br from-emerald-500 to-emerald-700">
+                <i data-feather="box"></i>
+            </div>
+            <span class="text-lg font-bold text-emerald-500">WMS POS</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-3">
+        <div class="flex items-center gap-2 px-3 py-1.5 bg-gray-100 rounded-lg">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-violet-500 flex items-center justify-center text-white font-semibold">A</div>
+            <div class="flex flex-col">
+                <span class="font-semibold text-xs">Admin User</span>
+                <span class="text-[10px] text-gray-500">Manager</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Main Container -->
+<div class="flex h-[calc(100vh-60px)] overflow-hidden">
+    <!-- Left Content -->
+    <div class="flex-1 p-4 overflow-y-auto bg-gray-50">
+        <!-- Categories -->
+        <div class="mb-4">
+            <div class="flex gap-3 overflow-x-auto pb-2 scrollbar-hide" id="categoriesScroll">
+                <div class="flex-shrink-0 flex items-center gap-3 px-5 py-3 bg-white border border-orange-500 rounded-xl cursor-pointer min-w-[140px] bg-emerald-50 active-category" data-category="All">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-100">
+                        <i data-feather="grid" class="w-[18px] text-amber-500"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-[13px]">Semua</span>
+                        <span class="text-[11px] text-gray-400">@Model.Count() items</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 flex items-center gap-3 px-5 py-3 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/15 min-w-[140px]" data-category="Makanan Utama">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-100">
+                        <i data-feather="coffee" class="w-[18px] text-red-500"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-[13px]">Makanan Utama</span>
+                        <span class="text-[11px] text-gray-400">@Model.Count(p => p.Category == "Makanan Utama") items</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 flex items-center gap-3 px-5 py-3 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/15 min-w-[140px]" data-category="Minuman">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-100">
+                        <i data-feather="droplet" class="w-[18px] text-blue-500"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-[13px]">Minuman</span>
+                        <span class="text-[11px] text-gray-400">@Model.Count(p => p.Category == "Minuman") items</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 flex items-center gap-3 px-5 py-3 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/15 min-w-[140px]" data-category="Snack">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-100">
+                        <i data-feather="sun" class="w-[18px] text-amber-500"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-[13px]">Snack</span>
+                        <span class="text-[11px] text-gray-400">@Model.Count(p => p.Category == "Snack") items</span>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 flex items-center gap-3 px-5 py-3 bg-white border border-gray-200 rounded-xl cursor-pointer transition-all hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/15 min-w-[140px]" data-category="Dessert">
+                    <div class="w-9 h-9 rounded-lg flex items-center justify-center bg-gray-100">
+                        <i data-feather="heart" class="w-[18px] text-pink-500"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-[13px]">Dessert</span>
+                        <span class="text-[11px] text-gray-400">@Model.Count(p => p.Category == "Dessert") items</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="bg-white rounded-xl p-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-base font-bold">Products</h2>
+                <div class="flex items-center gap-2 bg-gray-100 px-4 py-2 rounded-lg w-[280px]">
+                    <i data-feather="search" class="w-4 text-gray-400"></i>
+                    <input type="text" id="searchInput" placeholder="Search products..." class="bg-transparent border-none outline-none text-[13px] w-full placeholder-gray-500">
+                </div>
+            </div>
+            <div class="grid grid-cols-[repeat(auto-fill,minmax(180px,1fr))] gap-4" id="productsGrid">
+                @foreach (var product in Model)
+                {
+                    <div class="product-card border border-gray-200 rounded-xl p-4 cursor-pointer transition-all bg-white hover:border-emerald-500 hover:shadow-lg hover:shadow-emerald-500/15 hover:-translate-y-0.5" 
+                         onclick="addToCart(@product.Id)" data-category="@product.Category" data-name="@product.Name">
+                        <div class="w-full aspect-square rounded-lg overflow-hidden mb-3 bg-gray-100 flex items-center justify-center">
+                            <img src="@product.ImageUrl" alt="@product.Name" class="w-full h-full object-cover" onerror="this.parentElement.innerHTML='<div style=\'font-size:40px;opacity:0.3\'>🍽️</div>'">
+                        </div>
+                        <div class="font-semibold text-sm mb-1 text-gray-800">@product.Name</div>
+                        <div class="text-[11px] text-gray-400 mb-2">@product.Category</div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[11px] text-pink-500 bg-pink-50 px-2 py-0.5 rounded">Stock: @product.Stock</span>
+                            <span class="font-bold text-sm text-emerald-500">Rp @product.Price.ToString("N0")</span>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="w-[480px] bg-white border-l border-gray-200 flex flex-col overflow-hidden hidden lg:flex">
+        <div class="flex-1 overflow-y-auto p-4 custom-scrollbar">
+            <!-- Order Info -->
+            <div class="flex justify-between items-center mb-3">
+                <h3 class="text-[15px] font-bold text-gray-800">Order List</h3>
+            </div>
+            <div class="bg-gray-50 rounded-xl p-5 mb-4 border border-gray-200 border-l-4 border-l-orange-500">
+                <p class="text-[13px] text-gray-500 mb-3">Transaction ID: <span class="text-orange-500 font-bold text-sm" id="transactionId">#65565</span></p>
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="flex justify-between px-3 py-2 bg-white rounded-lg text-xs">
+                        <span class="text-gray-500">Date</span>
+                        <span class="font-bold text-gray-800" id="orderDate">--</span>
+                    </div>
+                    <div class="flex justify-between px-3 py-2 bg-white rounded-lg text-xs">
+                        <span class="text-gray-500">Time</span>
+                        <span class="font-bold text-gray-800" id="orderTime">--</span>
+                    </div>
+                    <div class="flex justify-between px-3 py-2 bg-white rounded-lg text-xs">
+                        <span class="text-gray-500">Items</span>
+                        <span class="font-bold text-gray-800" id="orderItemCount">0</span>
+                    </div>
+                    <div class="flex justify-between px-3 py-2 bg-white rounded-lg text-xs">
+                        <span class="text-gray-500">Customer</span>
+                        <span class="font-bold text-gray-800">Walk-in</span>
+                    </div>
+                </div>
+                <div class="inline-flex items-center gap-1 px-3 py-1 bg-emerald-50 text-emerald-500 rounded-full text-[11px] font-semibold mt-3">
+                    <i data-feather="clock" class="w-3"></i>
+                    In Progress
+                </div>
+            </div>
+
+            <!-- Customer Section -->
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-[15px] font-bold text-gray-800">Customer Information</h3>
+                </div>
+                <div class="flex items-center justify-between bg-gray-100 px-4 py-2.5 rounded-lg mb-2 cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <i data-feather="user" class="w-4 text-gray-500"></i>
+                        <span>Walk in Customer</span>
+                    </div>
+                    <i data-feather="chevron-down" class="w-4 text-gray-500"></i>
+                </div>
+                <div class="flex items-center gap-2 bg-gray-100 px-3 py-2 rounded-lg">
+                    <i data-feather="search" class="w-3.5 text-gray-400"></i>
+                    <input type="text" placeholder="Search customer..." class="bg-transparent border-none outline-none text-xs w-full placeholder-gray-500">
+                </div>
+            </div>
+
+            <!-- Cart Section -->
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-[15px] font-bold text-gray-800">Product Added</h3>
+                    <div class="flex items-center gap-1 text-red-500 text-[11px] cursor-pointer hover:opacity-80" id="clearCart">
+                        <i data-feather="trash-2" class="w-3"></i>
+                        Clear all
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2" id="cartItems">
+                    <!-- Cart items -->
+                     <div class="text-center py-10 text-gray-400">
+                        <i data-feather="shopping-cart" class="mx-auto w-12 h-12 opacity-50 mb-3"></i>
+                        <p class="text-[13px]">No items added yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-[15px] font-bold text-gray-800">Order Summary</h3>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span class="text-gray-500 text-xs">Sub Total</span>
+                    <span class="font-bold text-[13px]" id="subTotal">Rp 0</span>
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span class="text-gray-500 text-xs">Order Tax</span>
+                    <input type="number" class="w-20 px-2 py-1 border border-gray-200 rounded text-xs text-right outline-none focus:border-emerald-500" id="orderTax" value="5000" min="0">
+                </div>
+                <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span class="text-gray-500 text-xs">Shipping Cost</span>
+                    <input type="number" class="w-20 px-2 py-1 border border-gray-200 rounded text-xs text-right outline-none focus:border-emerald-500" id="shippingCost" value="10000" min="0">
+                </div>
+                 <div class="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span class="text-gray-500 text-xs">Discount</span>
+                    <select class="w-20 px-2 py-1 border border-gray-200 rounded text-xs text-right outline-none focus:border-emerald-500" id="discount">
+                        <option value="0">0%</option>
+                        <option value="5">5%</option>
+                        <option value="10">10%</option>
+                         <option value="15">15%</option>
+                        <option value="20">20%</option>
+                    </select>
+                </div>
+                <div class="h-px bg-gray-200 my-2"></div>
+                <div class="flex justify-between items-center py-2">
+                    <span class="text-gray-500 text-xs">Total</span>
+                    <span class="font-bold text-base text-emerald-500" id="grandTotal">Rp 0</span>
+                </div>
+            </div>
+
+            <!-- Payment Method -->
+            <div class="mb-4">
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-[15px] font-bold text-gray-800">Payment Method</h3>
+                </div>
+                <div class="flex gap-2">
+                    <div class="flex-1 flex flex-col items-center gap-1 p-3 border border-emerald-500 bg-emerald-50 rounded-lg cursor-pointer transition-all payment-method active" data-method="cash">
+                        <i data-feather="dollar-sign" class="w-5 text-emerald-500"></i>
+                        <span class="text-[11px] font-semibold text-emerald-500">Cash</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-1 p-3 border border-gray-200 rounded-lg cursor-pointer transition-all hover:border-emerald-500 payment-method" data-method="card">
+                        <i data-feather="credit-card" class="w-5 text-gray-500"></i>
+                        <span class="text-[11px] text-gray-500">Card</span>
+                    </div>
+                    <div class="flex-1 flex flex-col items-center gap-1 p-3 border border-gray-200 rounded-lg cursor-pointer transition-all hover:border-emerald-500 payment-method" data-method="scan">
+                        <i data-feather="maximize" class="w-5 text-gray-500"></i>
+                        <span class="text-[11px] text-gray-500">Scan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Actions -->
+        <div class="flex gap-3 p-4 border-t border-gray-200 bg-gray-50">
+            <button class="flex-1 flex items-center justify-center gap-2 py-3.5 border-none rounded-lg text-sm font-semibold cursor-pointer transition-all bg-orange-500 text-white hover:opacity-90 hover:-translate-y-px">
+                <i data-feather="x-circle"></i>
+                Cancel
+            </button>
+            <button class="flex-1 flex items-center justify-center gap-2 py-3.5 border-none rounded-lg text-sm font-semibold cursor-pointer transition-all bg-emerald-500 text-white hover:opacity-90 hover:-translate-y-px">
+                <i data-feather="check-circle"></i>
+                Payment
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const products = @Html.Raw(Json.Serialize(Model));
+    
+    // Cart State
+    let cart = [];
+    let transactionNum = 65565;
+    
+    // DOM Elements
+    const searchInput = document.getElementById('searchInput');
+    const productsGrid = document.getElementById('productsGrid');
+    const cartItems = document.getElementById('cartItems');
+    const subTotalEl = document.getElementById('subTotal');
+    const orderTaxEl = document.getElementById('orderTax');
+    const shippingCostEl = document.getElementById('shippingCost');
+    const discountEl = document.getElementById('discount');
+    const grandTotalEl = document.getElementById('grandTotal');
+    const clearCartBtn = document.getElementById('clearCart');
+    const transactionIdEl = document.getElementById('transactionId');
+    const orderDateEl = document.getElementById('orderDate');
+    const orderTimeEl = document.getElementById('orderTime');
+    const orderItemCountEl = document.getElementById('orderItemCount');
+
+    // Update Date/Time
+    function updateDateTime() {
+        const now = new Date();
+        const dateOptions = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+        const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+
+        if(document.getElementById('currentDate')) document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', dateOptions);
+        if(document.getElementById('currentTime')) document.getElementById('currentTime').textContent = now.toLocaleTimeString('en-US', timeOptions);
+        if(orderDateEl) orderDateEl.textContent = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        if(orderTimeEl) orderTimeEl.textContent = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    }
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+
+    // Format Currency to IDR
+    function formatIDR(amount) {
+        return 'Rp ' + amount.toLocaleString('id-ID');
+    }
+
+    // Add to Cart
+    window.addToCart = function(productId) {
+        const product = products.find(p => p.id === productId);
+        if(!product) return;
+
+        const existingItem = cart.find(item => item.id === productId);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            cart.push({ ...product, quantity: 1 });
+        }
+
+        renderCart();
+        updateTotals();
+    };
+
+    // Render Cart
+    function renderCart() {
+        if (cart.length === 0) {
+            cartItems.innerHTML = `
+                <div class="text-center py-10 text-gray-400">
+                    <i data-feather="shopping-cart" class="mx-auto w-12 h-12 opacity-50 mb-3"></i>
+                    <p class="text-[13px]">No items added yet</p>
+                </div>
+            `;
+            feather.replace();
+            return;
+        }
+
+        cartItems.innerHTML = cart.map(item => `
+            <div class="flex gap-3 p-2.5 bg-gray-50 rounded-lg">
+                <div class="w-[50px] h-[50px] rounded-md overflow-hidden flex-shrink-0">
+                    <img src="${item.imageUrl}" alt="${item.name}" class="w-full h-full object-cover">
+                </div>
+                <div class="flex-1">
+                    <span class="inline-block bg-amber-100 text-amber-600 text-[9px] px-1.5 py-0.5 rounded mb-1">#${item.id}</span>
+                    <div class="font-semibold text-xs mb-0.5">${item.name}</div>
+                    <div class="text-emerald-500 font-semibold text-xs">${formatIDR(item.price * item.quantity)}</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <div class="flex items-center gap-2 bg-white px-2 py-1 rounded-md shadow-sm">
+                        <button class="w-5 h-5 border-none bg-gray-100 rounded cursor-pointer flex items-center justify-center text-xs hover:bg-emerald-500 hover:text-white" onclick="updateQuantity(${item.id}, -1)">
+                            <i data-feather="minus" class="w-3"></i>
+                        </button>
+                        <span class="font-semibold text-xs min-w-[20px] text-center">${item.quantity}</span>
+                         <button class="w-5 h-5 border-none bg-gray-100 rounded cursor-pointer flex items-center justify-center text-xs hover:bg-emerald-500 hover:text-white" onclick="updateQuantity(${item.id}, 1)">
+                            <i data-feather="plus" class="w-3"></i>
+                        </button>
+                    </div>
+                     <div class="flex gap-2">
+                        <i data-feather="edit-2" class="w-3.5 cursor-pointer text-gray-400 hover:text-blue-500"></i>
+                        <i data-feather="trash-2" class="w-3.5 cursor-pointer text-gray-400 hover:text-red-500" onclick="removeFromCart(${item.id})"></i>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+        feather.replace();
+    }
+
+    // Update Quantity
+    window.updateQuantity = function(productId, change) {
+        const item = cart.find(item => item.id === productId);
+        if (item) {
+            item.quantity += change;
+            if (item.quantity <= 0) {
+                removeFromCart(productId);
+            } else {
+                renderCart();
+                updateTotals();
+            }
+        }
+    }
+
+    // Remove from Cart
+    window.removeFromCart = function(productId) {
+        cart = cart.filter(item => item.id !== productId);
+        renderCart();
+        updateTotals();
+    }
+
+    // Clear Cart
+    if(clearCartBtn) {
+        clearCartBtn.addEventListener('click', () => {
+            cart = [];
+            renderCart();
+            updateTotals();
+            transactionNum++;
+            if(transactionIdEl) transactionIdEl.textContent = '#' + transactionNum;
+        });
+    }
+
+    // Update Totals
+    function updateTotals() {
+        const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        const tax = parseFloat(orderTaxEl.value) || 0;
+        const shipping = parseFloat(shippingCostEl.value) || 0;
+        const discountPercent = parseFloat(discountEl.value) || 0;
+        const discount = subtotal * (discountPercent / 100);
+        const total = subtotal + tax + shipping - discount;
+
+        if(subTotalEl) subTotalEl.textContent = formatIDR(subtotal);
+        if(grandTotalEl) grandTotalEl.textContent = formatIDR(total);
+        if(orderItemCountEl) orderItemCountEl.textContent = cart.reduce((sum, item) => sum + item.quantity, 0) + ' items';
+    }
+
+    // Event Listeners for totals
+    if(orderTaxEl) orderTaxEl.addEventListener('input', updateTotals);
+    if(shippingCostEl) shippingCostEl.addEventListener('input', updateTotals);
+    if(discountEl) discountEl.addEventListener('change', updateTotals);
+
+    const categoryCards = document.querySelectorAll('.category-card, [data-category]');
+    
+    document.getElementById('categoriesScroll').addEventListener('click', function(e) {
+        const card = e.target.closest('[data-category]');
+        if(!card) return;
+
+        // Active state
+        document.querySelectorAll('#categoriesScroll > div').forEach(c => {
+             // Reset styles
+             c.classList.remove('border-orange-500', 'bg-emerald-50', 'active-category');
+             c.classList.add('border-gray-200');
+             const icon = c.querySelector('i');
+        });
+
+        card.classList.remove('border-gray-200');
+        card.classList.add('border-orange-500', 'bg-emerald-50', 'active-category');
+        
+        const selectedCategory = card.getAttribute('data-category');
+        filterProducts(selectedCategory, searchInput.value);
+    });
+
+    // Search Logic
+    if(searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const activeCard = document.querySelector('.active-category');
+            const category = activeCard ? activeCard.getAttribute('data-category') : 'All';
+            filterProducts(category, e.target.value);
+        });
+    }
+
+    function filterProducts(category, searchTerm) {
+        const cards = document.querySelectorAll('.product-card');
+        searchTerm = searchTerm.toLowerCase();
+
+        cards.forEach(card => {
+            const prodCat = card.getAttribute('data-category');
+            const prodName = card.getAttribute('data-name').toLowerCase();
+            
+            const matchesCategory = category === 'All' || prodCat === category;
+            const matchesSearch = prodName.includes(searchTerm);
+
+            if(matchesCategory && matchesSearch) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    }
+
+    // Payment Method Selection
+    document.querySelectorAll('.payment-method').forEach(method => {
+        method.addEventListener('click', () => {
+            document.querySelectorAll('.payment-method').forEach(m => {
+                m.classList.remove('active', 'border-emerald-500', 'bg-emerald-50');
+                m.classList.add('border-gray-200');
+                m.querySelector('i').classList.remove('text-emerald-500');
+                m.querySelector('i').classList.add('text-gray-500');
+                m.querySelector('span').classList.remove('font-semibold', 'text-emerald-500');
+                 m.querySelector('span').classList.add('text-gray-500');
+            });
+            
+            method.classList.remove('border-gray-200');
+            method.classList.add('active', 'border-emerald-500', 'bg-emerald-50');
+            method.querySelector('i').classList.remove('text-gray-500');
+            method.querySelector('i').classList.add('text-emerald-500');
+            method.querySelector('span').classList.remove('text-gray-500');
+            method.querySelector('span').classList.add('font-semibold', 'text-emerald-500');
+        });
+    });
+
+</script>
